@@ -7,8 +7,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="IdeaProjects" />
         <module name="java_webdriver_tau" />
+        <module name="IdeaProjects" />
         <module name="webdriver_java_tau" />
       </profile>
     </annotationProcessing>
