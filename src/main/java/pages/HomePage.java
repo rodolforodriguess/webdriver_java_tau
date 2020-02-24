@@ -26,6 +26,11 @@ import org.openqa.selenium.WebDriver;
             return new ForgotPassword(driver);
         }
 
+        public HoversPage clickHovers(){
+            clickLink("Hovers");
+            return new HoversPage(driver);
+        }
+
     private void clickLink(String linkText){
         driver.findElement(By.linkText(linkText)).click();
     }
