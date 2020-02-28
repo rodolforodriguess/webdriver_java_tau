@@ -36,6 +36,12 @@ import org.openqa.selenium.WebDriver;
             return new KeyPressesPage(driver);
         }
 
+        public HorizontalSlider clickSlider(){
+            clickLink("Horizontal Slider");
+            return new HorizontalSlider(driver);
+        }
+
+
     private void clickLink(String linkText){
         driver.findElement(By.linkText(linkText)).click();
     }
