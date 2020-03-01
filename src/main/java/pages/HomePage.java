@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -39,6 +40,11 @@ import org.openqa.selenium.WebDriver;
         public HorizontalSlider clickSlider(){
             clickLink("Horizontal Slider");
             return new HorizontalSlider(driver);
+        }
+
+        public AlertsPage clickJavaScriptAlerts(){
+            clickLink("JavaScript Alerts");
+            return new AlertsPage(driver);
         }
 
 

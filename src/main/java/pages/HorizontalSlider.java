@@ -7,7 +7,6 @@ import org.openqa.selenium.WebDriver;
 public class HorizontalSlider {
 
     private WebDriver driver;
-
     private By inputSlider = By.cssSelector("input[type=\"range\"");
     private By valueInput = By.cssSelector("span#range");
 
