@@ -1,6 +1,5 @@
 package pages;
 
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -50,6 +49,11 @@ import org.openqa.selenium.WebDriver;
         public FileUploadPage clickFileUpload(){
             clickLink("File Upload");
             return new FileUploadPage(driver);
+        }
+
+        public ContextMenuPage clickContextMenu(){
+            clickLink("Context Menu");
+            return new ContextMenuPage(driver);
         }
 
 
