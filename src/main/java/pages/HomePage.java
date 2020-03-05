@@ -56,6 +56,16 @@ import org.openqa.selenium.WebDriver;
             return new ContextMenuPage(driver);
         }
 
+        public WysiwigEditorPage clickWysiwigEditor(){
+            clickLink("WYSIWYG Editor");
+            return new WysiwigEditorPage(driver);
+        }
+
+        public FramesPage clickFrames(){
+            clickLink("Frames");
+            return new FramesPage(driver);
+        }
+
 
     private void clickLink(String linkText){
         driver.findElement(By.linkText(linkText)).click();
