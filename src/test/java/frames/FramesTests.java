@@ -26,9 +26,10 @@ public class FramesTests extends BaseTests {
     public void testNestedFrame(){
         var frames = homePage.clickFrames();
         var nestedFrames = frames.clickNestedFrames();
-        nestedFrames.switchToLeftFrame();
-        System.out.println(nestedFrames.getTextLeftFrame());
-
+        String leftFrameText = nestedFrames.switchToLeftFrame();
+        assertEquals(leftFrameText, "LEFT", "Text from left frame is incorrect");
+        String bottonFrameText = nestedFrames.switchToBottonFrame();
+        assertEquals(bottonFrameText, "BOTTOM", "Text from botton frame is incorrect");
     }
 
 }
