@@ -12,10 +12,15 @@ public class DynamicLoadingPage {
         this.driver = driver;
     }
 
-    public DynamicLoadingExample1Page DynamicLoadingExample(String position){
+    public DynamicLoadingExample1Page ClickExample1(){
         driver.findElement(dynamicExample1).click();
         return new DynamicLoadingExample1Page(driver);
-        }
+    }
+
+    public DynamicLoadingExample2Page ClickExample2(){
+        driver.findElement(dynamicExample1).click();
+        return new DynamicLoadingExample2Page(driver);
+    }
 
 
 }
