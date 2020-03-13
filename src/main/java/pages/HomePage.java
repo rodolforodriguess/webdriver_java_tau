@@ -71,8 +71,18 @@ import org.openqa.selenium.WebDriver;
             return new DynamicLoadingPage(driver);
         }
 
+        public LargeAndDeepDomPage clickLargeAndDeepDom(){
+            clickLink("Large & Deep DOM");
+            return new LargeAndDeepDomPage(driver);
+        }
 
-    private void clickLink(String linkText){
+        public InfiniteScrollPage clickInfiniteScroll(){
+            clickLink("Infinite Scroll");
+            return new InfiniteScrollPage(driver);
+    }
+
+
+        private void clickLink(String linkText){
         driver.findElement(By.linkText(linkText)).click();
     }
 }
