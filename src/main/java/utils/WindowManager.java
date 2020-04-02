@@ -45,4 +45,12 @@ public class WindowManager {
             }
         }
     }
+
+    public void SwitchToWindow(){
+        for (String handle : driver.getWindowHandles()) {
+            driver.switchTo().window(handle);
+        }
+    }
+
+
 }

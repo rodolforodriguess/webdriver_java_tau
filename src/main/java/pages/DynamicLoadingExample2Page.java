@@ -2,8 +2,11 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.util.List;
 
 public class DynamicLoadingExample2Page {
     private WebDriver driver;
@@ -23,6 +26,12 @@ public class DynamicLoadingExample2Page {
     public String getLoadedText(){
         return driver.findElement(text).getText();
     }
+
+    public List<WebElement> returnStartButton() {
+        List<WebElement> startBtn = driver.findElements(start);
+        return startBtn;
+    }
+
 
 
 }
